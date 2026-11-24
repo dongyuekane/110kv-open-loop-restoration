@@ -1,0 +1,22 @@
+{
+  "semantic": {
+    "case_count": 144,
+    "sizes": [
+      6,
+      8,
+      10
+    ],
+    "cases_by_size": {
+      "6": 36,
+      "8": 48,
+      "10": 60
+    },
+    "pairs": 432,
+    "pairs_with_same_electrical_state_and_changed_permission": 432,
+    "ac_feasible_but_fault_contact_hazard": 144,
+    "reset_only_permission_rejections_without_model_physical_hazard": 144,
+    "unsafe_executed_states": 0,
+    "interpretation": "Constructed reachable semantic coverage, not operating probabilities or relay-selectivity evidence"
+  },
+  "stage1": null
+}

@@ -1,0 +1,305 @@
+{
+  "name": "SYNTHETIC_110KV_OPEN_RING_V1",
+  "synthetic": true,
+  "base_mva": 100.0,
+  "frequency_hz": 50.0,
+  "buses": [
+    {
+      "id": "XA",
+      "vn_kv": 220
+    },
+    {
+      "id": "XB",
+      "vn_kv": 220
+    },
+    {
+      "id": "A",
+      "vn_kv": 110
+    },
+    {
+      "id": "B",
+      "vn_kv": 110
+    },
+    {
+      "id": "H0",
+      "vn_kv": 110
+    },
+    {
+      "id": "H1",
+      "vn_kv": 110
+    },
+    {
+      "id": "H2",
+      "vn_kv": 110
+    },
+    {
+      "id": "H3",
+      "vn_kv": 110
+    },
+    {
+      "id": "H4",
+      "vn_kv": 110
+    },
+    {
+      "id": "H5",
+      "vn_kv": 110
+    },
+    {
+      "id": "L0",
+      "vn_kv": 20
+    },
+    {
+      "id": "L1",
+      "vn_kv": 20
+    },
+    {
+      "id": "L2",
+      "vn_kv": 20
+    },
+    {
+      "id": "L3",
+      "vn_kv": 20
+    },
+    {
+      "id": "L4",
+      "vn_kv": 20
+    },
+    {
+      "id": "L5",
+      "vn_kv": 20
+    }
+  ],
+  "edges": [
+    {
+      "id": "l0",
+      "kind": "line",
+      "from": "A",
+      "to": "H0",
+      "length_km": 7,
+      "r_ohm": 1.358,
+      "x_ohm": 2.8699999999999997,
+      "c_nf": 61.25,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "l1",
+      "kind": "line",
+      "from": "H0",
+      "to": "H1",
+      "length_km": 10,
+      "r_ohm": 1.94,
+      "x_ohm": 4.1,
+      "c_nf": 87.5,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "l2",
+      "kind": "line",
+      "from": "H1",
+      "to": "H2",
+      "length_km": 8,
+      "r_ohm": 1.552,
+      "x_ohm": 3.28,
+      "c_nf": 70.0,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "l3",
+      "kind": "line",
+      "from": "H2",
+      "to": "H3",
+      "length_km": 12,
+      "r_ohm": 2.3280000000000003,
+      "x_ohm": 4.92,
+      "c_nf": 105.0,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "l4",
+      "kind": "line",
+      "from": "H3",
+      "to": "H4",
+      "length_km": 9,
+      "r_ohm": 1.746,
+      "x_ohm": 3.69,
+      "c_nf": 78.75,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "l5",
+      "kind": "line",
+      "from": "H4",
+      "to": "H5",
+      "length_km": 11,
+      "r_ohm": 2.134,
+      "x_ohm": 4.51,
+      "c_nf": 96.25,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "l6",
+      "kind": "line",
+      "from": "H5",
+      "to": "B",
+      "length_km": 6,
+      "r_ohm": 1.1640000000000001,
+      "x_ohm": 2.46,
+      "c_nf": 52.5,
+      "max_i_ka": 0.47
+    },
+    {
+      "id": "tA",
+      "kind": "trafo",
+      "from": "XA",
+      "to": "A",
+      "sn_mva": 100,
+      "vkr_percent": 0.26,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "tB",
+      "kind": "trafo",
+      "from": "XB",
+      "to": "B",
+      "sn_mva": 100,
+      "vkr_percent": 0.26,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "t0",
+      "kind": "trafo",
+      "from": "H0",
+      "to": "L0",
+      "sn_mva": 25,
+      "vkr_percent": 0.41,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "t1",
+      "kind": "trafo",
+      "from": "H1",
+      "to": "L1",
+      "sn_mva": 25,
+      "vkr_percent": 0.41,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "t2",
+      "kind": "trafo",
+      "from": "H2",
+      "to": "L2",
+      "sn_mva": 25,
+      "vkr_percent": 0.41,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "t3",
+      "kind": "trafo",
+      "from": "H3",
+      "to": "L3",
+      "sn_mva": 25,
+      "vkr_percent": 0.41,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "t4",
+      "kind": "trafo",
+      "from": "H4",
+      "to": "L4",
+      "sn_mva": 25,
+      "vkr_percent": 0.41,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    },
+    {
+      "id": "t5",
+      "kind": "trafo",
+      "from": "H5",
+      "to": "L5",
+      "sn_mva": 25,
+      "vkr_percent": 0.41,
+      "vk_percent": 12,
+      "pfe_kw": 0,
+      "i0_percent": 0,
+      "shift_degree": 0
+    }
+  ],
+  "loads": [
+    {
+      "id": "d0",
+      "bus": "L0",
+      "p_mw": 7.0,
+      "q_mvar": 2.3007887362520423
+    },
+    {
+      "id": "d1",
+      "bus": "L1",
+      "p_mw": 11.0,
+      "q_mvar": 3.6155251569674953
+    },
+    {
+      "id": "d2",
+      "bus": "L2",
+      "p_mw": 9.0,
+      "q_mvar": 2.958156946609769
+    },
+    {
+      "id": "d3",
+      "bus": "L3",
+      "p_mw": 10.0,
+      "q_mvar": 3.286841051788632
+    },
+    {
+      "id": "d4",
+      "bus": "L4",
+      "p_mw": 8.0,
+      "q_mvar": 2.6294728414309056
+    },
+    {
+      "id": "d5",
+      "bus": "L5",
+      "p_mw": 12.0,
+      "q_mvar": 3.9442092621463587
+    }
+  ],
+  "sources": [
+    {
+      "id": "SA",
+      "bus": "XA",
+      "vm_pu": 1.02
+    },
+    {
+      "id": "SB",
+      "bus": "XB",
+      "vm_pu": 1.02
+    }
+  ],
+  "normally_open": [
+    "l3"
+  ],
+  "voltage_limits_pu": [
+    0.95,
+    1.05
+  ],
+  "loading_limit_percent": 100.0
+}

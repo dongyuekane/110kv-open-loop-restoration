@@ -1,0 +1,27 @@
+{
+  "classification": "Entire network, geometry, loads, timings and events are synthetic; no field data.",
+  "parameter_source": "pandapower public standard-type documentation: 149-AL1/24-ST1A 110.0; 100 MVA 220/110 kV; 25 MVA 110/20 kV leakage parameters.",
+  "url": "https://pandapower.readthedocs.io/en/latest/std_types/basic.html",
+  "simplifications": [
+    "Balanced positive-sequence constant-PQ AC model.",
+    "Transformer excitation losses, phase shifts and tap action set to zero; nominal voltage ratios retained.",
+    "Source MW ceilings are synthetic operational budgets, distinct from transformer MVA ratings.",
+    "Faulted branches removed from AC model; fault-contact and isolation hazards checked separately.",
+    "No relay setting, electromagnetic transient or field protection certification is represented.",
+    "Sequential commands; elapsed execution and acknowledgement time explicitly integrated.",
+    "Historical private files inform abstract event categories only."
+  ],
+  "generation_seed": 20261015,
+  "synthetic_action_durations_s": {
+    "isolate_endpoint": 20,
+    "confirm_missing_ack": 60,
+    "reset_protection": 10,
+    "close_root_or_tie": 30,
+    "pickup_load": 10,
+    "rearm_after_refusal": 40,
+    "wait_poll": 5,
+    "missing_ack_timeout": 30
+  },
+  "timing_semantics": "A command changes the physical state at completion, then waits for its acknowledgement. Only then can a new command be selected; no overlapping actions. Controllers use a nominal 5 s acknowledgement for planning.",
+  "scenario_design": "6 fault positions x 6 event classes x 2 independent load realizations = 72 fixed cases; diagnostic baseline, not a held-out RL test set."
+}

@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-15T11:01:37.281316+00:00",
+  "synthetic": true,
+  "scope": "Balanced 110 kV open-ring variants with 6, 8, and 10 stations. Different ring sizes, not arbitrary-topology generalization.",
+  "core_base_cases": 144,
+  "stress_base_cases": 72,
+  "paired_outcomes": [
+    false,
+    true
+  ],
+  "assumed_refusal_probabilities": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "evaluation_refusal_probabilities": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "primary_evaluation_probability": 0.25,
+  "policies": [
+    "fixed_rule",
+    "mw_first_rule",
+    "nominal_sequence_search",
+    "contingent_0.05",
+    "contingent_0.10",
+    "contingent_0.25",
+    "contingent_0.50"
+  ],
+  "primary_estimand": "Equal-weight mean over all base cases of paired exact expected ENS difference at p=0.25; no stochastic failure sampling.",
+  "uncertainty": "Primary is a fully specified finite synthetic grid. Descriptive spread across cases is reported; no population significance claims. A seed-block bootstrap, if added, concerns only the specified synthetic load distribution.",
+  "failure_semantics": "At most one refusal on the first attempted tie close, after which rearm and the next close succeed. No event realization is supplied to policies.",
+  "secondary": "Assumed-vs-evaluation p matrix; all same-input paired comparisons; timing stresses retained even if no benefit.",
+  "pre_fault_rule": "Every case must pass pre-fault AC. Any failure halts the run and requires a recorded protocol revision; no silent filtering.",
+  "data_origin": "All geometry, loads, timings, failures and probabilities are synthetic. Standard-type electrical parameters are inherited from the disclosed stage1 input."
+}

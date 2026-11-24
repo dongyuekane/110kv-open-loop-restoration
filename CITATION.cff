@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository."
+title: "Command-refusal modeling for 110 kV open-ring restoration"
+type: software
+authors:
+  - family-names: Kan
+    given-names: Dongyue
